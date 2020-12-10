@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="Base 16 Converter" />
+        <meta name="description" content="Your Description..." />
+        <title>Base 16 Converter</title>
+        <link rel="stylesheet" href="resources/css/Base 16 Converter.css" />
+        <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon" />
+    </head>
+
+    <body>
+        <h1>Image To Base 64 converter</h1>
+        <div class="container">
+            <div class="inputPlace">
+                <input type="file" name="n" id="file" />
+                <div class="label">
+                    <label for="file" class="caption">Drop file here or click to upload.</label>
+                </div>
+            </div>
+            <div class="image">
+                <img alt="Preview Of Your Image" />
+            </div>
+            <div class="convertPlace">
+                <div class="content">
+                    <textarea class="convertedText" readonly></textarea>
+                    <button class="copy" onclick="copyTextNow()">Copy Code</button>
+                </div>
+            </div>
+        </div>
+        <script src="resources/js/Base 16 Converter.js"></script>
+    </body>
+</html>

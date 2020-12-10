@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container .inputPlace {
+    position: relative;
+    height: 100vh;
+    background: dodgerblue;
+    border-radius: 0 500px 50px 0 / 0 1000px 0px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .inputPlace .label,
+#file {
+    position: absolute;
+    margin-top: 150px;
+    width: 280px;
+    height: 280px;
+    border: 4px dashed #00ff00;
+    outline: none;
+    cursor: pointer;
+}
+
+.label {
+    font-size: 17px;
+    margin: 0;
+    text-align: center;
+    line-height: 280px;
+    color: white;
+}
+
+#file {
+    opacity: 0;
+    z-index: 2;
+}
+
+.container .image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+}
+
+.container .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    line-height: 100vh;
+}
+
+.container .convertPlace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    background: #ee1e28;
+    border-radius: 500px 0 0 50px / 1000px 0 0px 0;
+}
+
+.container .convertPlace .content {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.container .convertPlace .content .convertedText {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 500;
+}
+
+.container .convertPlace .content .copy {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 2;
+    color: white;
+    background: #303030;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+
+.container .convertPlace .content:hover .copy {
+    top: 0;
+}
